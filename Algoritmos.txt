@@ -1,0 +1,36 @@
+Diferentes tipos de Algoritmos y modelos.
+
+1) Aprendizaje supervisado -  Regresiones lineales
+
+a) LINEAR REGRESSION: 
+ - Importamos: from sklearn.linear_model import LinearRegression
+ - Creamos objeto: lr = LinearRegression()
+ - Fiteamos con datos de entrenamiento: lr.fit(X,y)
+ - Predecimos sobre los datos de testeo: y_pred = lr.predict(X_test)
+
+b) STOCHASTIC GREADIENT DESCENT REGRESSOR:
+ - Importamos: from sklearn.linear_model import SGDRegressor
+ - Creamos objeto: sgdr = SGDRegressor()
+ - Fiteamos con datos de training: sgdr.fit(X,y)
+ - Predecimos sobre los datos de testeo: y_pred = sgdr.predict(X_test)
+
+c) REGRESION CON DECISION TREE:
+ - Importamos: from sklearn.tree import DecisionTreeRegressor
+ - Creamos objecto: dtr = DecisionTreeRegressor()
+ - Fiteamos con datos de training: dtr.fit(X,y)
+ - Predecimos sobre los datos de testeo: y_pred = dtr.predict(X_test)
+
+d) K NEIGHBORS REGRESSOR:
+ - Importamos: from sklearn.neighbors import KNeighborsRegressor
+ - Creamos un objeto: knn = KNeighborsRegressor()
+ - Fiteamos con los datos de training: knn.fit(X, y)
+ - Predecimos sobre los datos de testeo: y_pred = knn.predict(X_test)
+
+e) TRAIN TEST SPLIT:
+ - Importamos: from sklearn.model_selection import train_test_split
+ - Dividimos el set original en train y test:
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 42, stratify = y)
+	El statify = y solo se utiliza en problemas de clasificación. 
+
+f) CROSS VALIDATION:
+ - Importamos: 
